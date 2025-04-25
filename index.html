@@ -973,15 +973,88 @@
         <div class="blessings-container">
             <div class="krishna-card">
                 <div class="krishna-image">
-                    <svg viewBox="0 0 100 100" width="200" height="200">
-                        <!-- Krishna Silhouette -->
-                        <circle cx="50" cy="30" r="15" fill="#4A90E2"/>
-                        <path d="M35 45 Q50 30 65 45 L70 80 Q50 90 30 80 Z" fill="#4A90E2"/>
-                        <path d="M48 15 Q50 5 52 15" stroke="#FFD700" stroke-width="3" fill="none"/>
-                        <circle cx="50" cy="15" r="4" fill="#FFD700"/>
-                        <!-- Flute -->
-                        <rect x="55" y="40" width="30" height="3" fill="#8B4513" transform="rotate(15 70 41.5)"/>
-                        <circle cx="85" cy="45" r="2" fill="#8B4513"/>
+                    <svg viewBox="0 0 300 400" width="300" height="400">
+                        <!-- Background glow -->
+                        <circle cx="150" cy="200" r="150" fill="url(#glow)" />
+                        
+                        <!-- Krishna figure -->
+                        <g transform="translate(150, 200)">
+                            <!-- Body -->
+                            <path d="M-30 -30 C-30 -50, 30 -50, 30 -30 L40 60 C40 80, -40 80, -40 60 Z" fill="#4A90E2" stroke="#2171b5" stroke-width="2"/>
+                            
+                            <!-- Face -->
+                            <circle cx="0" cy="-60" r="35" fill="#f0d8b0" stroke="#d4b38a" stroke-width="2"/>
+                            
+                            <!-- Crown -->
+                            <path d="M-25 -95 L-15 -115 L0 -105 L15 -115 L25 -95 Z" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+                            <circle cx="0" cy="-95" r="8" fill="#FF4444"/>
+                            <circle cx="-15" cy="-100" r="5" fill="#44FF44"/>
+                            <circle cx="15" cy="-100" r="5" fill="#44FF44"/>
+                            
+                            <!-- Peacock feather -->
+                            <path d="M0 -105 Q10 -130, 0 -140 Q20 -130, 30 -140" fill="none" stroke="#2E8B57" stroke-width="3"/>
+                            <circle cx="0" cy="-140" r="8" fill="#1E90FF"/>
+                            <circle cx="0" cy="-140" r="4" fill="#000080"/>
+                            
+                            <!-- Eyes -->
+                            <ellipse cx="-12" cy="-65" rx="6" ry="4" fill="white"/>
+                            <ellipse cx="12" cy="-65" rx="6" ry="4" fill="white"/>
+                            <circle cx="-12" cy="-65" r="3" fill="#000"/>
+                            <circle cx="12" cy="-65" r="3" fill="#000"/>
+                            
+                            <!-- Smile -->
+                            <path d="M-10 -50 Q0 -45, 10 -50" fill="none" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/>
+                            
+                            <!-- Tilak -->
+                            <path d="M-3 -75 L0 -85 L3 -75 Z" fill="#FF4444"/>
+                            
+                            <!-- Arms -->
+                            <path d="M-30 -10 Q-50 0, -60 20" fill="none" stroke="#f0d8b0" stroke-width="12" stroke-linecap="round"/>
+                            <path d="M30 -10 Q50 0, 60 20" fill="none" stroke="#f0d8b0" stroke-width="12" stroke-linecap="round"/>
+                            
+                            <!-- Flute -->
+                            <rect x="40" y="10" width="60" height="8" fill="#8B4513" rx="4"/>
+                            <circle cx="50" cy="14" r="3" fill="#654321"/>
+                            <circle cx="65" cy="14" r="3" fill="#654321"/>
+                            <circle cx="80" cy="14" r="3" fill="#654321"/>
+                            
+                            <!-- Dhoti -->
+                            <path d="M-40 60 Q0 70, 40 60 L30 100 Q0 110, -30 100 Z" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+                            
+                            <!-- Feet -->
+                            <ellipse cx="-20" cy="110" rx="10" ry="5" fill="#f0d8b0"/>
+                            <ellipse cx="20" cy="110" rx="10" ry="5" fill="#f0d8b0"/>
+                            
+                            <!-- Jewelry -->
+                            <circle cx="0" cy="-20" r="5" fill="#FFD700"/>
+                            <path d="M-15 -20 Q0 -10, 15 -20" fill="none" stroke="#FFD700" stroke-width="3"/>
+                            <circle cx="-25" cy="25" r="4" fill="#FFD700"/>
+                            <circle cx="25" cy="25" r="4" fill="#FFD700"/>
+                        </g>
+                        
+                        <!-- Musical notes -->
+                        <text x="220" y="180" font-size="24" fill="#FFD700">♪</text>
+                        <text x="240" y="200" font-size="20" fill="#FFD700">♫</text>
+                        <text x="260" y="220" font-size="18" fill="#FFD700">♪</text>
+                        
+                        <!-- Lotus flowers -->
+                        <g transform="translate(50, 350)">
+                            <path d="M0 0 Q-10 -20, 0 -30 Q10 -20, 0 0" fill="#FF69B4"/>
+                            <path d="M-10 0 Q0 -20, 10 0" fill="#FF1493"/>
+                        </g>
+                        <g transform="translate(250, 350)">
+                            <path d="M0 0 Q-10 -20, 0 -30 Q10 -20, 0 0" fill="#FF69B4"/>
+                            <path d="M-10 0 Q0 -20, 10 0" fill="#FF1493"/>
+                        </g>
+                        
+                        <!-- Definitions -->
+                        <defs>
+                            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.3" />
+                                <stop offset="70%" style="stop-color:#FFD700;stop-opacity:0.1" />
+                                <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0" />
+                            </radialGradient>
+                        </defs>
                     </svg>
                 </div>
                 <div class="blessing-text">
