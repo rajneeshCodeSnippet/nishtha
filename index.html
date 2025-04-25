@@ -516,6 +516,52 @@
             }
         }
         
+        /* Blessings Section */
+        .blessings {
+            padding: 150px 50px;
+            background: linear-gradient(135deg, #f8f0e3 0%, #e8d8c3 100%);
+        }
+        
+        .blessings-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .krishna-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .krishna-image {
+            margin-bottom: 30px;
+        }
+        
+        .krishna-image svg {
+            filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.3));
+        }
+        
+        .sanskrit-text {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', serif;
+        }
+        
+        .blessing-meaning {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .birthday-blessing {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--secondary);
+        }
+        
         /* Messages Section */
         .messages {
             padding: 150px 50px;
@@ -806,6 +852,7 @@
             <a href="#about" class="nav-link">About</a>
             <a href="#timeline" class="nav-link">Journey</a>
             <a href="#surprises" class="nav-link">Surprises</a>
+            <a href="#blessings" class="nav-link">Blessings</a>
             <a href="#messages" class="nav-link">Messages</a>
             <a href="#games" class="nav-link">Games</a>
         </div>
@@ -820,7 +867,7 @@
         </div>
         <div class="hero-content">
             <h1 class="hero-title">Happy Birthday<br>Nishtha</h1>
-            <p class="hero-subtitle">Today is all about you - filled with surprises, joy, and magical moments waiting to be discovered!</p>
+            <p class="hero-subtitle">A small gesture to brighten your special day with some fun surprises and warm wishes</p>
             <a href="#about" class="hero-cta">Explore Your Day</a>
         </div>
     </section>
@@ -916,6 +963,32 @@
                 <div class="surprise-icon">⭐</div>
                 <h3>Star Shower</h3>
                 <p>Fill the sky with shooting stars!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blessings Section -->
+    <section class="blessings" id="blessings">
+        <h2 class="section-title">Divine Blessings</h2>
+        <div class="blessings-container">
+            <div class="krishna-card">
+                <div class="krishna-image">
+                    <svg viewBox="0 0 100 100" width="200" height="200">
+                        <!-- Krishna Silhouette -->
+                        <circle cx="50" cy="30" r="15" fill="#4A90E2"/>
+                        <path d="M35 45 Q50 30 65 45 L70 80 Q50 90 30 80 Z" fill="#4A90E2"/>
+                        <path d="M48 15 Q50 5 52 15" stroke="#FFD700" stroke-width="3" fill="none"/>
+                        <circle cx="50" cy="15" r="4" fill="#FFD700"/>
+                        <!-- Flute -->
+                        <rect x="55" y="40" width="30" height="3" fill="#8B4513" transform="rotate(15 70 41.5)"/>
+                        <circle cx="85" cy="45" r="2" fill="#8B4513"/>
+                    </svg>
+                </div>
+                <div class="blessing-text">
+                    <p class="sanskrit-text">सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः</p>
+                    <p class="blessing-meaning">May all be happy, may all be free from illness</p>
+                    <p class="birthday-blessing">May Lord Krishna shower his divine blessings upon you, filling your life with joy, prosperity, and wisdom on this special day and always.</p>
+                </div>
             </div>
         </div>
     </section>
